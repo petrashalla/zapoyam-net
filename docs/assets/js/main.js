@@ -25,10 +25,14 @@ if (scrollTop)
                     plashka.classList.add('hide');
                     plashka.style.height = '0px';
                     plashka.style.opacity = '0';
+                    plashka.style.overflow = 'hidden';
 
-                    headerTop.classList.add('hide');
-                    headerTop.style.height = '0px';
-                    headerTop.style.opacity = '0';
+                    if(window.innerWidth > 1260) {
+                        headerTop.classList.add('hide');
+                        headerTop.style.height = '0px';
+                        headerTop.style.opacity = '0';
+                        headerTop.style.overflow = 'hidden';
+                    }
                 }
             }
             else {
